@@ -1,0 +1,51 @@
+#!/bin/sh
+rm -f intermine.log
+
+echo ""
+echo "##########################################################################################################################################"
+echo "##########################################################################################################################################"
+echo "##################################################### MEDICMINE INTEGRATE ################################################################"
+echo "##########################################################################################################################################"
+echo "##########################################################################################################################################"
+echo ""
+
+## ontologies and InterPro
+./gradlew integrate -Psource=go --stacktrace
+./gradlew integrate -Psource=so --stacktrace
+./gradlew integrate -Psource=plant-ontology --stacktrace
+./gradlew integrate -Psource=plant-trait-ontology --stacktrace
+./gradlew integrate -Psource=interpro --stacktrace
+./gradlew integrate -Psource=interpro-go --stacktrace
+
+## LIS gene families
+./gradlew integrate -Psource=lis.fam1-genefamily --stacktrace
+
+###########
+## medtr ##
+###########
+
+./gradlew integrate -Psource=medtr-about --stacktrace
+
+## medtr.A17_HM341.gnm4
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-cds-fasta --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-protein-fasta --stacktrace
+
+## medtr.R108_HM340.gnm1
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-protein-fasta --stacktrace
+
+###########
+## medsa ##
+###########
+
+./gradlew integrate -Psource=medsa-about --stacktrace
+
+## medsa.XinJiangDaYe.gnm1
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-cds-fasta --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-protein-fasta --stacktrace

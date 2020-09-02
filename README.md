@@ -1,2 +1,2 @@
 # medicmine
-A mine for Medicago truncatula and Medicago sativa
+An InterMine for Medicago truncatula
