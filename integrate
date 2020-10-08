@@ -9,11 +9,13 @@ echo "##########################################################################
 echo "##########################################################################################################################################"
 echo ""
 
-## ontologies and InterPro
+## ontologies
 ./gradlew integrate -Psource=go --stacktrace
 ./gradlew integrate -Psource=so --stacktrace
 ./gradlew integrate -Psource=plant-ontology --stacktrace
 ./gradlew integrate -Psource=plant-trait-ontology --stacktrace
+
+## InterPro
 ./gradlew integrate -Psource=interpro --stacktrace
 ./gradlew integrate -Psource=interpro-go --stacktrace
 
@@ -28,15 +30,27 @@ echo ""
 
 ## medtr.A17_HM341.gnm4
 ./gradlew integrate -Psource=medtr.A17_HM341.gnm4-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
 ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-cds-fasta --stacktrace
 ./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-protein-fasta --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gfa --stacktrace
+./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-pathway-redo --stacktrace
 
 ## medtr.R108_HM340.gnm1
 ./gradlew integrate -Psource=medtr.R108_HM340.gnm1-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
 ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-cds-fasta --stacktrace
 ./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gfa --stacktrace
+./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-pathway --stacktrace
+
+## medtr.jemalong_A17.gnm5
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5-chromosome-fasta --stacktrace
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-cds-fasta --stacktrace
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-protein-fasta --stacktrace
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gff --stacktrace
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gfa --stacktrace
+./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-pathway --stacktrace
 
 ###########
 ## medsa ##
@@ -46,6 +60,8 @@ echo ""
 
 ## medsa.XinJiangDaYe.gnm1
 ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gff --stacktrace
 ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-cds-fasta --stacktrace
 ./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-protein-fasta --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gff --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gfa --stacktrace
+./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-pathway --stacktrace

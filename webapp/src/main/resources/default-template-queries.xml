@@ -14,6 +14,7 @@
     <tag name="im:hidden" objectIdentifier="Evidence.relations" type="collection" />
     <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Gene" type="class" />
     <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Protein" type="class" />
+    <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Pathway" type="class" />
     <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.QTL" type="class" />
     <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.MappingPopulation" type="class" />
     <tag name="im:summary" objectIdentifier="BioEntity.synonyms" type="collection" />
