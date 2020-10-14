@@ -99,8 +99,9 @@
   <!-- have to have a Gene entry for the list analysis heat map -->
   <class className="org.intermine.model.bio.Gene">
     <fields>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="Name"/>
       <fieldconfig fieldExpr="primaryIdentifier" label="LIS identifier" />
+      <fieldconfig fieldExpr="secondaryIdentifier" label="ALT identifier"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="chromosome.secondaryIdentifier" label="Chr"/>
