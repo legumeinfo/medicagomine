@@ -303,11 +303,11 @@
   <reportdisplayers>
 
     <!-- this appears to be broken, but using it to avoid duplicating Ontology Annotations display for now -->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer"
-                     jspName="model/geneOntologyDisplayer.jsp"
-                     replacesFields="ontologyAnnotations"
-                     placement="summary"
-                     types="Gene"/>
+    <!-- <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer" -->
+    <!--                  jspName="model/geneOntologyDisplayer.jsp" -->
+    <!--                  replacesFields="ontologyAnnotations" -->
+    <!--                  placement="summary" -->
+    <!--                  types="Gene"/> -->
     
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneStructureDisplayer"
                      jspName="model/geneStructureDisplayer.jsp"
