@@ -116,7 +116,7 @@
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
-      <fieldconfig fieldExpr="description" label="Description" />
+      <fieldconfig fieldExpr="description" label="Description" doNotTruncate="true" />
       <fieldconfig fieldExpr="geneFamilyScore" label="Gene family score"/>
       <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
@@ -302,12 +302,12 @@
   <!-- report displayers -->
   <reportdisplayers>
 
-    <!-- this appears to be broken, but using it to avoid duplicating Ontology Annotations display for now -->
-    <!-- <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer" -->
-    <!--                  jspName="model/geneOntologyDisplayer.jsp" -->
-    <!--                  replacesFields="ontologyAnnotations" -->
-    <!--                  placement="summary" -->
-    <!--                  types="Gene"/> -->
+    <!-- custom NCGR version -->
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneOntologyDisplayer"
+                     jspName="model/geneOntologyDisplayer.jsp"
+                     replacesFields="ontologyAnnotations"
+                     placement="summary"
+                     types="Gene"/>
     
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneStructureDisplayer"
                      jspName="model/geneStructureDisplayer.jsp"
