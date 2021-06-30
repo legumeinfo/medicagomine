@@ -4,18 +4,6 @@
   <property name="intermine.properties.file" value="medicmine.properties"/>
   <sources>
 
-
-
-
-
-    <!-- Gene_families/legume.genefam.fam1.M65K/ -->
-    <source name="lis.fam1-genefamily" type="lis-genefamily" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Gene_families/legume.genefam.fam1.M65K/"/>
-      <property name="dataSetDescription" value="LIS gene families"/>
-      <property name="desired.organisms" value="aradu araip arahy arath cajca cicar cucsa glyma glyso lotja lupan medtr phalu phavu prupe solly tripr vigan vigra vigun vitvi"/>
-      <property name="src.data.dir" location="/data/LIS/Gene_families/legume.genefam.fam1.M65K"/>
-    </source>
-
     <!-- ################### -->
     <!-- Medicago truncatula -->
     <!-- ################### -->
@@ -24,21 +12,19 @@
     <!-- ├── description_Medicago_truncatula.yml -->
     <!-- └── strains_Medicago_truncatula.yml -->
     <source name="medtr-about" type="lis-about" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/about_this_collection/"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/about_this_collection/"/>
       <property name="dataSetDescription" value="Medicago truncatula organism and strain information."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/about_this_collection"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/about_this_collection"/>
     </source>
 
-    <!-- ################################## -->
-    <!-- Medicago truncatula A17_HM341.gnm4 -->
-    <!-- ################################## -->
-
-    <!-- A17_HM341.gnm4.2GZ9/ -->
+    <!-- genomes/A17_HM341.gnm4.2GZ9 -->
     <!-- ├── medtr.A17_HM341.gnm4.2GZ9.genome_main.fna -->
-    <source name="medtr.A17_HM341.gnm4-chromosome-fasta" type="lis-fasta" dump="true">
+    <!-- └── README.A17_HM341.gnm4.2GZ9.yml -->
+    <source name="A17_HM341.gnm4.2GZ9.genome_main" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="A17_HM341.gnm4.2GZ9"/>
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula A17_HM341"/>
       <property name="lis-fasta.dataSetVersion" value="gnm4"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.2GZ9/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="A17_HM341"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -46,20 +32,22 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.2GZ9.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.2GZ9"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9"/>
     </source>
 
-    <!-- A17_HM341.gnm4.ann2.G3ZY/ -->
-    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.cds_primaryTranscript.fna -->
-    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.mrna.fna -->
+    <!-- annotations/A17_HM341.gnm4.ann2.G3ZY -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.cds.fna -->
     <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.gene_models_main.gff3 -->
-    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.legfed_v1_0.M65K.gfa.tsv -->
-    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.pathway.tsv -->
-    <!-- └── medtr.A17_HM341.gnm4.ann2.G3ZY.protein_primaryTranscript.faa -->
-    <source name="medtr.A17_HM341.gnm4.ann2-cds-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="CDS models for the medtr.A17_HM341.gnm4 genome"/>
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.gfa.tsv -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.mrna.fna -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.phytozome_10_2.HFNR.gfa.tsv.gz -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.G3ZY.protein.faa -->
+    <!-- └── README.A17_HM341.gnm4.ann2.G3ZY.yml -->
+    <source name="A17_HM341.gnm4.ann2.G3ZY.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm4.ann2"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="A17_HM341"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -67,13 +55,14 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
-      <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.ann2.G3ZY.cds_primaryTranscript.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.ann2.G3ZY.cds.fna"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
-    <source name="medtr.A17_HM341.gnm4.ann2-mrna-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="mRNA models for the medtr.A17_HM341.gnm4 genome"/>
+    <source name="A17_HM341.gnm4.ann2.G3ZY.mrna" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm4.ann2"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="A17_HM341"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -82,12 +71,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.ann2.G3ZY.mrna.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
-    <source name="medtr.A17_HM341.gnm4.ann2-protein-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="Protein models for the medtr.A17_HM341.gnm4 genome"/>
+    <source name="A17_HM341.gnm4.ann2.G3ZY.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm4.ann2"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="A17_HM341"/>
       <property name="lis-fasta.sequenceType" value="protein"/>
@@ -95,39 +85,43 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
-      <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.ann2.G3ZY.protein_primaryTranscript.faa"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="lis-fasta.includes" value="medtr.A17_HM341.gnm4.ann2.G3ZY.protein.faa"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
-    <source name="medtr.A17_HM341.gnm4.ann2-gff" type="lis-gff" dump="true">
+    <source name="A17_HM341.gnm4.ann2.G3ZY.gene_models_main" type="lis-gff" dump="true">
       <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
-      <property name="gff3.dataSetTitle" value="medtr.A17_HM341.gnm4.ann2.G3ZY.gene_models_main.gff3"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotation for the medtr.A17_HM341.gnm4 genome"/>
+      <property name="gff3.dataSetTitle" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="gff3.dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
       <property name="gff3.dataSetVersion" value="gnm4.ann2"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3880"/>
       <property name="gff3.strainIdentifier" value="A17_HM341"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
-    <source name="medtr.A17_HM341.gnm4.ann2-gfa" type="lis-gfa" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
-      <property name="data.set.description" value="LIS gene family assignments for medtr.A17_HM341.gnm4"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+    <source name="A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true">
+      <property name="dataSetName" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
-    <source name="medtr.A17_HM341.gnm4.ann2-pathway" type="lis-pathway" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY/"/>
-      <property name="data.set.description" value="Plant Reactome pathways for medtr.A17_HM341.gnm4"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/A17_HM341.gnm4.ann2.G3ZY"/>
+    <source name="A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true">
+      <property name="dataSetName" value="A17_HM341.gnm4.ann2.G3ZY"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/"/>
+      <property name="dataSetDescription" value="medtr.A17_HM341.gnm4.ann2 genome annotation"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
     </source>
 
-    <!-- R108_HM340.gnm1.XT6J/ -->
+    <!-- genomes/R108_HM340.gnm1.XT6J -->
     <!-- ├── medtr.R108_HM340.gnm1.XT6J.genome_main.fna -->
-    <source name="medtr.R108_HM340.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+    <!-- └── README.R108_HM340.gnm1.XT6J.yml -->
+    <source name="R108_HM340.gnm1.XT6J.genome_main" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="R108_HM340.gnm1.XT6J"/>
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula R108_HM340"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.XT6J/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="R108_HM340"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -135,19 +129,22 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.XT6J.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.XT6J"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J"/>
     </source>
 
-    <!-- R108_HM340.gnm1.ann1.85YW -->
+    <!-- annotations/R108_HM340.gnm1.ann1.85YW/ -->
+    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.cds.fna -->
     <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.gene_models_main.gff3 -->
-    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.cds_primaryTranscript.fna -->
+    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.gfa.tsv -->
     <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.mrna.fna -->
-    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.protein_primaryTranscript.faa -->
-    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.pathway.tsv -->
-    <source name="medtr.R108_HM340.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="CDS models for the medtr.R108_HM340.gnm1 genome"/>
+    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.phytozome_10_2.HFNR.gfa.tsv.gz -->
+    <!-- ├── medtr.R108_HM340.gnm1.ann1.85YW.protein.faa -->
+    <!-- └── README.R108_HM340.gnm1.ann1.85YW.yml -->
+    <source name="R108_HM340.gnm1.ann1.85YW.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="R108_HM340"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -155,13 +152,14 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
-      <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.ann1.85YW.cds_primaryTranscript.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+      <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.ann1.85YW.cds.fna"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
-    <source name="medtr.R108_HM340.gnm1.ann1-mrna-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="mRNA models for the medtr.R108_HM340.gnm1 genome"/>
+    <source name="R108_HM340.gnm1.ann1.85YW.mrna" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="R108_HM340"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -170,12 +168,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.ann1.85YW.mrna.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
-    <source name="medtr.R108_HM340.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="Protein models for the medtr.R108_HM340.gnm1 genome"/>
+    <source name="R108_HM340.gnm1.ann1.85YW.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="lis-fasta.dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="R108_HM340"/>
       <property name="lis-fasta.sequenceType" value="protein"/>
@@ -183,43 +182,46 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
-      <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.ann1.85YW.protein_primaryTranscript.faa"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+      <property name="lis-fasta.includes" value="medtr.R108_HM340.gnm1.ann1.85YW.protein.faa"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
-    <source name="medtr.R108_HM340.gnm1.ann1-gff" type="lis-gff" dump="true">
+    <source name="R108_HM340.gnm1.ann1.85YW.gene_models_main" type="lis-gff" dump="true">
       <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
-      <property name="gff3.dataSetTitle" value="medtr.R108_HM340.gnm1.ann1.85YW.gene_models_main.gff3"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotation for the medtr.R108_HM340.gnm1 genome"/>
+      <property name="gff3.dataSetTitle" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="gff3.dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3880"/>
       <property name="gff3.strainIdentifier" value="R108_HM340"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
-    <source name="medtr.R108_HM340.gnm1.ann1-gfa" type="lis-gfa" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
-      <property name="data.set.description" value="LIS gene family assignments for medtr.R108_HM340.gnm1"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+    <source name="R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true">
+      <property name="dataSetName" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
-    <source name="medtr.R108_HM340.gnm1.ann1-pathway" type="lis-pathway" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW/"/>
-      <property name="data.set.description" value="Plant Reactome pathways for medtr.R108_HM340.gnm1 via gene family membership with medtr.A17_HM341."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/R108_HM340.gnm1.ann1.85YW"/>
+    <source name="R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true">
+      <property name="dataSetName" value="R108_HM340.gnm1.ann1.85YW"/>
+      <property name="dataSetDescription" value="medtr.R108_HM340.gnm1.ann1 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW"/>
     </source>
 
     <!-- ##################################### -->
     <!-- Medicago truncatula jemalong_A17.gnm5 -->
     <!-- ##################################### -->
 
-    <!-- jemalong_A17.gnm5.MVZ2/ -->
-    <!-- └── medtr.jemalong_A17.gnm5.MVZ2.genome_main.fna -->
-    <source name="medtr.jemalong_A17.gnm5-chromosome-fasta" type="lis-fasta" dump="true">
+    <!-- genomes/jemalong_A17.gnm5.MVZ2 -->
+    <!-- ├── medtr.jemalong_A17.gnm5.MVZ2.genome_main.fna-->
+    <!-- └── README.jemalong_A17.gnm5.MVZ2.yml -->
+    <source name="jemalong_A17.gnm5.MVZ2.genome_main" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula jemalong_A17"/>
       <property name="lis-fasta.dataSetVersion" value="gnm5"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.MVZ2/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/genomes/jemalong_A17.gnm5.MVZ2/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="jemalong_A17"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -227,19 +229,22 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.includes" value="medtr.jemalong_A17.gnm5.MVZ2.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.MVZ2"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/jemalong_A17.gnm5.MVZ2"/>
     </source>
 
-    <!-- jemalong_A17.gnm5.ann1_6.L2RX/ -->
+    <!-- annotations/jemalong_A17.gnm5.ann1_6.L2RX/ -->
     <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.cds.fna -->
-    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.mrna.fna -->
-    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.pathway.tsv -->
     <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.gene_models_main.gff3 -->
-    <!-- └── medtr.jemalong_A17.gnm5.ann1_6.L2RX.protein.faa -->
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-cds-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="CDS models for the medtr.jemalong_A17.gnm5 genome"/>
+    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.gfa.tsv -->
+    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.mrna.fna -->
+    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.phytozome_10_2.HFNR.gfa.tsv.gz -->
+    <!-- ├── medtr.jemalong_A17.gnm5.ann1_6.L2RX.protein.faa -->
+    <!-- └── README.jemalong_A17.gnm5.ann1_6.L2RX.yml -->
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="lis-fasta.dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm5.ann1_6"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="jemalong_A17"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -248,12 +253,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medtr.jemalong_A17.gnm5.ann1_6.L2RX.cds.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-mrna-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="mRNA models for the medtr.jemalong_A17.gnm5 genome"/>
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.mrna" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="lis-fasta.dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm5.ann1_6"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="jemalong_A17"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -262,12 +268,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medtr.jemalong_A17.gnm5.ann1_6.L2RX.mrna.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-protein-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="Protein models for the medtr.jemalong_A17.gnm5 genome"/>
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="lis-fasta.dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm5.ann1_6"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
       <property name="lis-fasta.taxonId" value="3880"/>
       <property name="lis-fasta.strainIdentifier" value="jemalong_A17"/>
       <property name="lis-fasta.sequenceType" value="protein"/>
@@ -276,30 +283,32 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medtr.jemalong_A17.gnm5.ann1_6.L2RX.protein.faa"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-gff" type="lis-gff" dump="true">
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.gene_models_main" type="lis-gff" dump="true">
       <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
-      <property name="gff3.dataSetTitle" value="medtr.jemalong_A17.gnm5.ann1_6.L2RX.gene_models_main.gff3"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotation for the medtr.jemalong_A17.gnm5 genome"/>
+      <property name="gff3.dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="gff3.dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
       <property name="gff3.dataSetVersion" value="gnm5.ann1_6"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3880"/>
       <property name="gff3.strainIdentifier" value="jemalong_A17"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-gfa" type="lis-gfa" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
-      <property name="data.set.description" value="LIS gene family assignments for medtr.jemalong_A17.gnm5"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true">
+      <property name="dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
-    <source name="medtr.jemalong_A17.gnm5.ann1_6-pathway" type="lis-pathway" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX/"/>
-      <property name="data.set.description" value="Plant Reactome pathways for medtr.jemalong_A17.gnm5 via gene family membership with medtr.A17_HM341."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_truncatula/jemalong_A17.gnm5.ann1_6.L2RX"/>
+    <source name="jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true">
+      <property name="dataSetTitle" value="jemalong_A17.gnm5.ann1_6.L2RX"/>
+      <property name="dataSetDescription" value="jemalong_A17.gnm5.ann1_6 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/jemalong_A17.gnm5.ann1_6.L2RX"/>
     </source>
 
 
@@ -307,26 +316,25 @@
     <!-- Medicago sativa -->
     <!-- ############### -->
 
-
     <!-- about_this_collection -->
     <!-- ├── description_Medicago_sativa.yml -->
     <!-- └── strains_Medicago_sativa.yml -->
     <source name="medsa-about" type="lis-about" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/about_this_collection/"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/about_this_collection/"/>
       <property name="dataSetDescription" value="Medicago sativa organism and strain information."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/about_this_collection"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/about_this_collection"/>
     </source>
 
     <!-- ################################# -->
     <!-- Medicago sativa XinJiangDaYe.gnm1 -->
     <!-- ################################# -->
 
-    <!-- XinJiangDaYe.gnm1.12MR -->
-    <!-- └── medsa.XinJiangDaYe.gnm1.genome_main.fna -->
-    <source name="medsa.XinJiangDaYe.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+    <!-- genomes/XinJiangDaYe.gnm1.12MR -->
+    <!-- ├── medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna -->
+    <source name="XinJiangDaYe.gnm1.12MR.genome_main" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago sativa XinJiangDaYe gnm1"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.12MR/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/genomes/sativa/XinJiangDaYe.gnm1.12MR/"/>
       <property name="lis-fasta.taxonId" value="3879"/>
       <property name="lis-fasta.strainIdentifier" value="XinJiangDaYe"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -334,21 +342,21 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.includes" value="medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.12MR"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR"/>
     </source>
-
-    <!-- XinJiangDaYe.gnm1.ann1.RKB9 -->
+    <!-- annotations/XinJiangDaYe.gnm1.ann1.RKB9/ -->
     <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.cds.fna -->
-    <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.protein.faa -->
     <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.gene_models_main.gff3 -->
     <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.iprscan.gff3 -->
     <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.gfa.tsv -->
-    <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.pathway.tsv -->
-    <!-- └── medsa.XinJiangDaYe.gnm1.ann1.RKB9.transcript.fna -->
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="CDS models for the medsa.XinJiangDaYe.gnm1 genome"/>
+    <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.phytozome_10_2.HFNR.gfa.tsv.gz -->
+    <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.protein.faa -->
+    <!-- ├── medsa.XinJiangDaYe.gnm1.ann1.RKB9.transcript.fna -->
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="lis-fasta.dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
       <property name="lis-fasta.taxonId" value="3879"/>
       <property name="lis-fasta.strainIdentifier" value="XinJiangDaYe"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -357,12 +365,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medsa.XinJiangDaYe.gnm1.ann1.RKB9.cds.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="Protein models for the medsa.XinJiangDaYe.gnm1 genome"/>
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="lis-fasta.dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
       <property name="lis-fasta.taxonId" value="3879"/>
       <property name="lis-fasta.strainIdentifier" value="XinJiangDaYe"/>
       <property name="lis-fasta.sequenceType" value="protein"/>
@@ -371,12 +380,13 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medsa.XinJiangDaYe.gnm1.ann1.RKB9.protein.faa"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-transcript-fasta" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetDescription" value="Transcript models for the medsa.XinJiangDaYe.gnm1 genome"/>
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.transcript" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="lis-fasta.dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
       <property name="lis-fasta.taxonId" value="3879"/>
       <property name="lis-fasta.strainIdentifier" value="XinJiangDaYe"/>
       <property name="lis-fasta.sequenceType" value="dna"/>
@@ -385,35 +395,71 @@
       <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="lis-fasta.geneAttribute" value="locus"/>
       <property name="lis-fasta.includes" value="medsa.XinJiangDaYe.gnm1.ann1.RKB9.transcript.fna"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-gff" type="lis-gff" dump="true">
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.gene_models_main" type="lis-gff" dump="true">
       <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
-      <property name="gff3.dataSetTitle" value="medsa.XinJiangDaYe.gnm1.ann1.RKB9"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations for the medsa.XinJiangDaYe.gnm1 genome"/>
+      <property name="gff3.dataSetTitle" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="gff3.dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3879"/>
       <property name="gff3.strainIdentifier" value="XinJiangDaYe"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-ipr-gff" type="lis-ipr-gff" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
-      <property name="data.set.description" value="InterPro scan results for medsa.XinJiangDaYe.gnm1."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+    <!-- <source name="XinJiangDaYe.gnm1.ann1.RKB9.iprscan" type="lis-ipr-gff" dump="true"> -->
+    <!--   <property name="dataSetName" value="XinJiangDaYe.gnm1.ann1.RKB9"/> -->
+    <!--   <property name="dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/> -->
+    <!--   <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/> -->
+    <!--   <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/> -->
+    <!-- </source> -->
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true">
+      <property name="dataSetName" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-gfa" type="lis-gfa" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
-      <property name="data.set.description" value="LIS gene family assignments for medsa.XinJiangDaYe.gnm1"/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+    <source name="XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true">
+      <property name="dataSetName" value="XinJiangDaYe.gnm1.ann1.RKB9"/>
+      <property name="dataSetDescription" value="medsa.XinJiangDaYe.gnm1.ann1 genome annotation"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/"/>
+      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
     </source>
-    <source name="medsa.XinJiangDaYe.gnm1.ann1-pathway" type="lis-pathway" dump="true">
-      <property name="data.set.url" value="https://legumeinfo.org/data/public/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9/"/>
-      <property name="data.set.description" value="Plant Reactome pathways for medsa.XinJiangDaYe.gnm1 via gene family membership with medtr.A17_HM341."/>
-      <property name="src.data.dir" location="/data/LIS/Medicago_sativa/XinJiangDaYe.gnm1.ann1.RKB9"/>
+
+
+    <!-- expression/A17_HM341.gnm4.ann2.expr.RLZY -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.expr.RLZY.obo.tsv -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.expr.RLZY.samples.tsv -->
+    <!-- ├── medtr.A17_HM341.gnm4.ann2.expr.RLZY.values.tsv -->
+    <!-- └── README.A17_HM341.gnm4.ann2.expr.RLZY.yml -->
+    <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true">
+      <property name="dataSetName" value="A17_HM341.gnm4.ann2.expr.RLZY"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/"/>
+      <property name="dataSetDescription" value="Medicago truncatula Gene Expression Atlas data from He, J. et al. BMC Bioinformatics 10, 441 (2009)."/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY"/>
+    </source>
+
+    
+    <!-- ############# -->
+    <!-- GENE FAMILIES -->
+    <!-- ############# -->
+
+    <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
+    <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/"/>
+      <property name="dataSetDescription" value="LIS gene families"/>
+      <property name="desired.organisms" value="aradu araip arahy arath cajca cicar cucsa glyma glyso lotja lupan medtr phalu phavu prupe solly tripr vigan vigra vigun vitvi"/>
+      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+    </source>
+
+    <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
+    <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/"/>
+      <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
+      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
     </source>
     
     <!-- ############### -->
@@ -483,14 +529,9 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
-    <post-process name="lis-populate-cds-gene-references"/>
-    <post-process name="lis-populate-cds-protein-references"/>
-    <post-process name="lis-populate-cds-transcript-references"/>
     <post-process name="lis-populate-gene-protein-collections"/>
     <post-process name="lis-populate-qtl-gene-collections"/>
     <post-process name="lis-populate-publications"/>
-    <post-process name="lis-populate-transcript-gene-references"/>
-    <post-process name="lis-populate-transcript-protein-references"/>
     <post-process name="lis-populate-protein-pathway-collections"/>
 
     <!-- VIEWS AND INDEXES -->

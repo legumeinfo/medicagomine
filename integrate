@@ -18,54 +18,59 @@ echo ""
 ./gradlew integrate -Psource=interpro --stacktrace
 ./gradlew integrate -Psource=interpro-go --stacktrace
 
-## LIS gene families
-./gradlew integrate -Psource=lis.fam1-genefamily --stacktrace
+## gene families
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
 
-## about 
-./gradlew integrate -Psource=medtr-about --stacktrace
-./gradlew integrate -Psource=medsa-about --stacktrace
+###########
+## medtr ##
+###########
 
-## chromosome-fasta
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5-chromosome-fasta --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1-chromosome-fasta --stacktrace
+./gradlew integrate --stacktrace -Psource=medtr-about
 
-## cds-fasta
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-cds-fasta --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-cds-fasta --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-cds-fasta --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-cds-fasta --stacktrace
+## medtr.A17_HM341.gnm4
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.2GZ9.genome_main
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.cds
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.mrna
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.protein
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.gene_models_main
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.gfa
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.G3ZY.legfed_v1_0.M65K.pathway
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.expr.RLZY
 
-## mrna-fasta
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-mrna-fasta --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-mrna-fasta --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-mrna-fasta --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-transcript-fasta --stacktrace
+## medtr.R108_HM340.gnm1
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.XT6J.genome_main
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.cds
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.mrna
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.protein
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.gene_models_main
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.gfa
+./gradlew integrate --stacktrace -Psource=R108_HM340.gnm1.ann1.85YW.legfed_v1_0.M65K.pathway
 
-## protein-fasta
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-protein-fasta --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-protein-fasta --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-protein-fasta --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-protein-fasta --stacktrace
+## medtr.jemalong_A17.gnm5
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.MVZ2.genome_main
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.cds
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.mrna
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.protein
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.gene_models_main
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.gfa
+./gradlew integrate --stacktrace -Psource=jemalong_A17.gnm5.ann1_6.L2RX.legfed_v1_0.M65K.pathway
 
-## gff
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gff --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gff --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gff --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gff --stacktrace
+###########
+## medsa ##
+###########
 
-## ipr-gff
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-ipr-gff --stacktrace
+./gradlew integrate --stacktrace -Psource=medsa-about
 
-## gfa
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-gfa --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-gfa --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-gfa --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-gfa --stacktrace
+## medsa.XinJiangDaYe.gnm1
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.12MR.genome_main
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.cds
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.protein
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.transcript
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.gene_models_main
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.gfa
+./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.legfed_v1_0.M65K.pathway
 
-## pathway
-./gradlew integrate -Psource=medtr.A17_HM341.gnm4.ann2-pathway --stacktrace
-./gradlew integrate -Psource=medtr.R108_HM340.gnm1.ann1-pathway --stacktrace
-./gradlew integrate -Psource=medtr.jemalong_A17.gnm5.ann1_6-pathway --stacktrace
-./gradlew integrate -Psource=medsa.XinJiangDaYe.gnm1.ann1-pathway --stacktrace
+## BROKEN FOR UNKNOWN REASONS
+# ./gradlew integrate --stacktrace -Psource=XinJiangDaYe.gnm1.ann1.RKB9.iprscan
+
