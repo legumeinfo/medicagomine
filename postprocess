@@ -24,8 +24,8 @@ echo ""
 ## LIS
 # ./gradlew postprocess -Pprocess=lis-populate-gene-protein-collections
 # ./gradlew postprocess -Pprocess=lis-populate-qtl-gene-collections
-# ./gradlew postprocess -Pprocess=lis-populate-publications
 # ./gradlew postprocess -Pprocess=lis-populate-protein-pathway-collections
+# ./gradlew postprocess -Pprocess=lis-populate-publications
 
 ## VIEWS AND INDEXES
 # ./gradlew postprocess -Pprocess=create-location-overlap-index

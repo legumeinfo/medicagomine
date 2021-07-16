@@ -121,9 +121,9 @@
       <fieldconfig fieldExpr="geneFamilyScore" label="Gene family score"/>
       <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
-    <!-- <bagdisplayers> -->
-    <!--   <displayer src="heatMap.tile" showOnLeft="true" /> -->
-    <!-- </bagdisplayers> -->
+    <bagdisplayers>
+      <displayer src="heatMap.tile" showOnLeft="true" />
+    </bagdisplayers>
   </class>
 
   <!-- extends SequenceFeature; needed for bagdisplayer -->
@@ -344,11 +344,11 @@
   <class className="org.intermine.model.bio.ExpressionSource">
     <headerconfig>
       <titles>
-        <title mainTitles="identifier" numberofMainTitlesToShow="1" />
+        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="identifier" label="Name"/>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
       <fieldconfig fieldExpr="geoSeries" label="NCBI GEO Accession"/>
       <fieldconfig fieldExpr="bioProject.accession" label="NCBI BioProject"/>
       <fieldconfig fieldExpr="sra" label="NCBI SRA"/>

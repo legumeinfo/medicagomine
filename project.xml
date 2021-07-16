@@ -20,7 +20,7 @@
     <!-- genomes/A17_HM341.gnm4.2GZ9 -->
     <!-- ├── medtr.A17_HM341.gnm4.2GZ9.genome_main.fna -->
     <!-- └── README.A17_HM341.gnm4.2GZ9.yml -->
-    <source name="A17_HM341.gnm4.2GZ9.genome_main" type="lis-fasta" dump="true">
+    <source name="A17_HM341.gnm4.2GZ9" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetTitle" value="A17_HM341.gnm4.2GZ9"/>
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula A17_HM341"/>
       <property name="lis-fasta.dataSetVersion" value="gnm4"/>
@@ -117,7 +117,7 @@
     <!-- genomes/R108_HM340.gnm1.XT6J -->
     <!-- ├── medtr.R108_HM340.gnm1.XT6J.genome_main.fna -->
     <!-- └── README.R108_HM340.gnm1.XT6J.yml -->
-    <source name="R108_HM340.gnm1.XT6J.genome_main" type="lis-fasta" dump="true">
+    <source name="R108_HM340.gnm1.XT6J" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetTitle" value="R108_HM340.gnm1.XT6J"/>
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula R108_HM340"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1"/>
@@ -218,7 +218,7 @@
     <!-- genomes/jemalong_A17.gnm5.MVZ2 -->
     <!-- ├── medtr.jemalong_A17.gnm5.MVZ2.genome_main.fna-->
     <!-- └── README.jemalong_A17.gnm5.MVZ2.yml -->
-    <source name="jemalong_A17.gnm5.MVZ2.genome_main" type="lis-fasta" dump="true">
+    <source name="jemalong_A17.gnm5.MVZ2" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago truncatula jemalong_A17"/>
       <property name="lis-fasta.dataSetVersion" value="gnm5"/>
       <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/genomes/jemalong_A17.gnm5.MVZ2/"/>
@@ -331,7 +331,7 @@
 
     <!-- genomes/XinJiangDaYe.gnm1.12MR -->
     <!-- ├── medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna -->
-    <source name="XinJiangDaYe.gnm1.12MR.genome_main" type="lis-fasta" dump="true">
+    <source name="XinJiangDaYe.gnm1.12MR" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Medicago sativa XinJiangDaYe gnm1"/>
       <property name="lis-fasta.dataSetVersion" value="gnm1"/>
       <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/genomes/sativa/XinJiangDaYe.gnm1.12MR/"/>
@@ -435,12 +435,12 @@
     <!-- ├── medtr.A17_HM341.gnm4.ann2.expr.RLZY.samples.tsv -->
     <!-- ├── medtr.A17_HM341.gnm4.ann2.expr.RLZY.values.tsv -->
     <!-- └── README.A17_HM341.gnm4.ann2.expr.RLZY.yml -->
-    <!-- <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true"> -->
-    <!--   <property name="dataSetName" value="A17_HM341.gnm4.ann2.expr.RLZY"/> -->
-    <!--   <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/"/> -->
-    <!--   <property name="dataSetDescription" value="Medicago truncatula Gene Expression Atlas data from He, J. et al. BMC Bioinformatics 10, 441 (2009)."/> -->
-    <!--   <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY"/> -->
-    <!-- </source> -->
+    <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true">
+      <property name="dataSetName" value="A17_HM341.gnm4.ann2.expr.RLZY"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/"/>
+      <property name="dataSetDescription" value="Medicago truncatula Gene Expression Atlas data from He, J. et al. BMC Bioinformatics 10, 441 (2009)."/>
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY"/>
+    </source>
 
     
     <!-- ############# -->
