@@ -24,7 +24,7 @@
     <source name="XinJiangDaYe.gnm1.12MR" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.XinJiangDaYe.gnm1.12MR.yml,medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.XinJiangDaYe.gnm1.12MR.yml,medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR"/>
     </source>
 
@@ -38,119 +38,119 @@
     <source name="A17.gnm5.MVZ2" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17.gnm5.MVZ2/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17.gnm5.MVZ2.yml,medtr.A17.gnm5.MVZ2.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.A17.gnm5.MVZ2.yml,medtr.A17.gnm5.MVZ2.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17.gnm5.MVZ2"/>
     </source>
     <!-- Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9 -->
     <source name="A17_HM341.gnm4.2GZ9" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17_HM341.gnm4.2GZ9.yml,medtr.A17_HM341.gnm4.2GZ9.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.A17_HM341.gnm4.2GZ9.yml,medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM004.gnm1.L7PM -->
     <source name="HM004.gnm1.L7PM" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM004.gnm1.L7PM/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM004.gnm1.L7PM.yml,medtr.HM004.gnm1.L7PM.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM004.gnm1.L7PM.yml,medtr.HM004.gnm1.L7PM.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM004.gnm1.L7PM"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM010.gnm1.YDPY -->
     <source name="HM010.gnm1.YDPY" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM010.gnm1.YDPY/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM010.gnm1.YDPY.yml,medtr.HM010.gnm1.YDPY.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM010.gnm1.YDPY.yml,medtr.HM010.gnm1.YDPY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM010.gnm1.YDPY"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM022.gnm1.B190 -->
     <source name="HM022.gnm1.B190" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM022.gnm1.B190/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM022.gnm1.B190.yml,medtr.HM022.gnm1.B190.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM022.gnm1.B190.yml,medtr.HM022.gnm1.B190.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM022.gnm1.B190"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM023.gnm1.FFHH -->
     <source name="HM023.gnm1.FFHH" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM023.gnm1.FFHH/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM023.gnm1.FFHH.yml,medtr.HM023.gnm1.FFHH.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM023.gnm1.FFHH.yml,medtr.HM023.gnm1.FFHH.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM023.gnm1.FFHH"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM034.gnm1.6VW9 -->
     <source name="HM034.gnm1.6VW9" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM034.gnm1.6VW9/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM034.gnm1.6VW9.yml,medtr.HM034.gnm1.6VW9.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM034.gnm1.6VW9.yml,medtr.HM034.gnm1.6VW9.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM034.gnm1.6VW9"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM050.gnm1.9JPP -->
     <source name="HM050.gnm1.9JPP" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM050.gnm1.9JPP/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM050.gnm1.9JPP.yml,medtr.HM050.gnm1.9JPP.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM050.gnm1.9JPP.yml,medtr.HM050.gnm1.9JPP.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM050.gnm1.9JPP"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM056.gnm1.JBKN -->
     <source name="HM056.gnm1.JBKN" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM056.gnm1.JBKN/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM056.gnm1.JBKN.yml,medtr.HM056.gnm1.JBKN.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM056.gnm1.JBKN.yml,medtr.HM056.gnm1.JBKN.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM056.gnm1.JBKN"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM058.gnm1.JVBP -->
     <source name="HM058.gnm1.JVBP" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM058.gnm1.JVBP/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM058.gnm1.JVBP.yml,medtr.HM058.gnm1.JVBP.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM058.gnm1.JVBP.yml,medtr.HM058.gnm1.JVBP.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM058.gnm1.JVBP"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM060.gnm1.V7B2 -->
     <source name="HM060.gnm1.V7B2" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM060.gnm1.V7B2/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM060.gnm1.V7B2.yml,medtr.HM060.gnm1.V7B2.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM060.gnm1.V7B2.yml,medtr.HM060.gnm1.V7B2.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM060.gnm1.V7B2"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM095.gnm1.FBQK -->
     <source name="HM095.gnm1.FBQK" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM095.gnm1.FBQK/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM095.gnm1.FBQK.yml,medtr.HM095.gnm1.FBQK.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM095.gnm1.FBQK.yml,medtr.HM095.gnm1.FBQK.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM095.gnm1.FBQK"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM125.gnm1.GFN2 -->
     <source name="HM125.gnm1.GFN2" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM125.gnm1.GFN2/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM125.gnm1.GFN2.yml,medtr.HM125.gnm1.GFN2.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM125.gnm1.GFN2.yml,medtr.HM125.gnm1.GFN2.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM125.gnm1.GFN2"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM129.gnm1.9HG9 -->
     <source name="HM129.gnm1.9HG9" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM129.gnm1.9HG9/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM129.gnm1.9HG9.yml,medtr.HM129.gnm1.9HG9.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM129.gnm1.9HG9.yml,medtr.HM129.gnm1.9HG9.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM129.gnm1.9HG9"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM185.gnm1.1G05 -->
     <source name="HM185.gnm1.1G05" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM185.gnm1.1G05/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM185.gnm1.1G05.yml,medtr.HM185.gnm1.1G05.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM185.gnm1.1G05.yml,medtr.HM185.gnm1.1G05.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM185.gnm1.1G05"/>
     </source>
     <!-- Medicago/truncatula/genomes/HM324.gnm1.SJSJ -->
     <source name="HM324.gnm1.SJSJ" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM324.gnm1.SJSJ/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM324.gnm1.SJSJ.yml,medtr.HM324.gnm1.SJSJ.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.HM324.gnm1.SJSJ.yml,medtr.HM324.gnm1.SJSJ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM324.gnm1.SJSJ"/>
     </source>
     <!-- Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS -->
     <source name="R108.gnmHiC_1.7RWS" type="lis-fasta" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.R108.gnmHiC_1.7RWS.yml,medtr.R108.gnmHiC_1.7RWS.genome_main.fna" />
+      <property name="lis-fasta.includes" value="README.R108.gnmHiC_1.7RWS.yml,medtr.R108.gnmHiC_1.7RWS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS"/>
     </source>
     
