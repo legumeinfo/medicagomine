@@ -23,6 +23,7 @@ echo -e "#################################################################"
 ./gradlew postprocess --stacktrace -Pprocess=create-attribute-indexes
 
 ## LIS
+./gradlew postprocess --stacktrace -Pprocess=lis-populate-genefamily-size
 ./gradlew postprocess --stacktrace -Pprocess=lis-populate-publications
 
 ## DO THESE AFTER UPDATES

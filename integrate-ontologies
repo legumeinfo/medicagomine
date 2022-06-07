@@ -13,3 +13,4 @@ echo -e "#################################################################"
 ./gradlew integrate --stacktrace -Psource=plant-ontology
 ./gradlew integrate --stacktrace -Psource=plant-trait-ontology
 ./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
+./gradlew integrate --stacktrace -Psource=phytozome_10_2.genefam.descriptors

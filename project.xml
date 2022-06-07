@@ -258,6 +258,13 @@
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
+    <!-- Phytozome gene families -->
+    <source name="phytozome_10_2.genefam.descriptors" type="lis-phytozome" dump="true">
+      <property name="dataSetName" value="phytozome_10_2.genefam.descriptors"/>
+      <property name="dataSetDescription" value="Phytozome gene family descriptions"/>
+      <property name="src.data.dir" location="/data/phytozome"/>
+    </source>
+
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
@@ -385,6 +392,7 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
+    <post-process name="lis-populate-genefamily-size"/>
     <post-process name="lis-populate-publications"/>
 
     <!-- VIEWS AND INDEXES -->

@@ -35,7 +35,7 @@
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
     </fields>
   </class>
 
@@ -48,7 +48,7 @@
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
     </fields>
     <bagdisplayers>
       <displayer src="annotation.tile" showOnLeft="true" />
@@ -64,7 +64,7 @@
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
     </fields>
     <bagdisplayers>
       <displayer src="annotation.tile" showOnLeft="true" />
@@ -78,7 +78,7 @@
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="strain.identifier" label="Strain"/>
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly"/>
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" />
     </fields>
   </class>
   <class className="org.intermine.model.bio.Supercontig">
@@ -88,7 +88,7 @@
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="strain.identifier" label="Strain"/>
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly"/>
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" />
     </fields>
   </class>
 
@@ -125,7 +125,7 @@
       <fieldconfig fieldExpr="url" doNotTruncate="true"/>
       <fieldconfig fieldExpr="description"/>
     </fields>
-    <tabledisplayer src="/model/dataSourceShort.jsp"/>
+    <tabledisplayer src="model/dataSourceShort.jsp"/>
   </class>
 
   <class className="org.intermine.model.bio.Location">
@@ -148,10 +148,8 @@
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="description" label="Description" doNotTruncate="true" />
-      <fieldconfig fieldExpr="geneFamilyScore" label="Gene family score"/>
-      <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
     <bagdisplayers>
       <displayer src="heatMap.tile" showOnLeft="true" />
@@ -164,7 +162,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="direction" label="Direction" />
       <fieldconfig fieldExpr="distance" label="Distance" />
     </fields>
@@ -182,10 +180,9 @@
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="description" label="Description"/>
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="length" displayer="model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
     <bagdisplayers>
       <displayer src="annotation.tile" showOnLeft="true" />
@@ -293,7 +290,7 @@
                    showInSummary="false" showInResults="false" showInInlineCollection="false"/>
       <fieldconfig fieldExpr="length"/>
     </fields>
-    <tabledisplayer src="/model/sequenceShortDisplayer.jsp"/>
+    <tabledisplayer src="model/sequenceShortDisplayer.jsp"/>
   </class>
 
   <class className="org.intermine.model.bio.Synonym">
@@ -314,6 +311,16 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.GeneFamilyAssignment">
+    <fields>
+      <fieldconfig fieldExpr="geneFamily.description" label="Description"/>
+      <fieldconfig fieldExpr="geneFamily.identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="evalue" label="e-value" />
+      <fieldconfig fieldExpr="score" label="Score" />
+      <fieldconfig fieldExpr="bestDomainScore" label="Best Domain Score" />
+    </fields>
+  </class>
+  
   <class className="org.intermine.model.bio.Pathway">
     <headerconfig>
       <titles>
@@ -439,7 +446,6 @@
   <!-- report displayers -->
   <reportdisplayers>
 
-    <!-- custom NCGR version -->
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneOntologyDisplayer"
                      jspName="model/geneOntologyDisplayer.jsp"
                      replacesFields="ontologyAnnotations"
@@ -450,11 +456,19 @@
                      jspName="model/geneStructureDisplayer.jsp"
                      replacesFields="transcripts,exons,CDSs,introns,UTRs,fivePrimeUTR,threePrimeUTR"
                      placement="summary"
-                     types="Gene,Transcript,Exon,Intron,UTR,CDS"/>
+                     types="Gene"/>
+
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.ProteinSequenceDisplayer"
+                     jspName="model/proteinSequenceDisplayer.jsp"
+                     replacesFields="length,sequence"
+                     placement="summary"
+                     types="Protein"/>
     
+    <!-- replacesFields="chromosome,chromosomeLocation,sequence,length,sequenceOntologyTerm,locations,cytoLocation,supercontig,supercontigLocation" -->
+
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.SequenceFeatureDisplayer"
                      jspName="model/sequenceFeatureDisplayer.jsp"
-                     replacesFields="chromosome,chromosomeLocation,sequence,length,sequenceOntologyTerm,locations,cytoLocation,supercontig,supercontigLocation"
+                     replacesFields="chromosome,chromosomeLocation,sequence,length,supercontig,supercontigLocation"
                      placement="summary"
                      types="SequenceFeature"/>
 
@@ -550,14 +564,14 @@
     <enrichmentwidgetdisplayer id="genefamily_enrichment"
                                title="Gene Family Enrichment"
                                description="Gene families enriched for genes in this list."
-                               label="GeneFamily"
+                               label="Gene Family"
                                startClass="Gene"
                                startClassDisplay="primaryIdentifier"
-                               enrich="geneFamily.description"
-                               enrichIdentifier="geneFamily.description"
+                               enrich="geneFamilyAssignments.geneFamily.description"
+                               enrichIdentifier="geneFamilyAssignments.geneFamily.identifier"
                                constraints="organism.name=[list]"
                                typeClass="Gene"
-                               views="secondaryIdentifier, organism.name, geneFamily.description"/>
+                               views="secondaryIdentifier, organism.name, geneFamilyAssignments.geneFamily.description"/>
 
     <enrichmentwidgetdisplayer id="pathway_enrichment"
                                title="Pathway Enrichment"
