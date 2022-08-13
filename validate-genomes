@@ -1,0 +1,5 @@
+#!/bin/sh
+for COLLECTION in `ls -1d /data/v2/Medicago/*/genomes/*`
+do
+    validate-genome-collection $COLLECTION 
+done
