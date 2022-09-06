@@ -240,10 +240,10 @@
       <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH"/>
     </source>
 
-    <!-- Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY -->
-    <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY"/>
+    <!-- Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009 -->
+    <source name="A17_HM341.gnm4.ann2.expr.He_Vagner_2009" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009/" />
+      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009"/>
     </source>
 
     <!-- ############### -->

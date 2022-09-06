@@ -6,5 +6,5 @@ echo -e "#################################################################"
 echo -e "########################## ${LP}EXPRESSION${NC} ###########################"
 echo -e "#################################################################"
 
-./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.expr.RLZY
+./gradlew integrate --stacktrace -Psource=A17_HM341.gnm4.ann2.expr.He_Vagner_2009
 
