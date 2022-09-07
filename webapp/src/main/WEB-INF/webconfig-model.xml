@@ -386,11 +386,11 @@
   <class className="org.intermine.model.bio.ExpressionSample">
     <headerconfig>
       <titles>
-        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
+        <title mainTitles="identifier" numberofMainTitlesToShow="1" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
+      <fieldconfig fieldExpr="identifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="description" label="Description"/>
       <fieldconfig fieldExpr="bioSample" label="NCBI BioSample"/>
