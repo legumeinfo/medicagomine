@@ -1,5 +1,0 @@
-#!/bin/sh
-for COLLECTION in `ls -1d /data/v2/Medicago/*/expression/*`
-do
-    validate-expression-collection $COLLECTION
-done
