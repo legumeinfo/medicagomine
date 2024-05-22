@@ -378,10 +378,10 @@
       <property name="src.data.dir" location="/home/shokin/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
-        <!-- Medicago/GENUS/pangenes/Medicago.pan1.XXQ6 -->
-    <source name="Medicago.pan1.XXQ6" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/GENUS/pngenes/Medicago.pan1.XXQ6/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Medicago/GENUS/pangenes/Medicago.pan1.XXQ6"/>
+        <!-- Medicago/GENUS/pangenes/Medicago.pan2.451K -->
+    <source name="Medicago.pan2.451K" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/GENUS/pngenes/Medicago.pan2.451K/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Medicago/GENUS/pangenes/Medicago.pan2.451K"/>
     </source>
     
     <!-- ############################################ NON-LIS ######################################## -->
@@ -427,9 +427,9 @@
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
-    <post-process name="transfer-sequences"/>
     <post-process name="populate-child-features"/>
     <post-process name="create-gene-flanking-features"/>
+    <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
     <post-process name="lis-populate-genefamily-size"/>
